@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/moj-portfolio/static/css/main.57f0ce15.css",
+    "main.js": "/moj-portfolio/static/js/main.8e4b922d.js",
+    "static/media/vintage-frame-salon-tools-jobs-career-concept.jpg": "/moj-portfolio/static/media/vintage-frame-salon-tools-jobs-career-concept.756f19e0927785deed09.jpg",
+    "static/media/womenstyle.png": "/moj-portfolio/static/media/womenstyle.163b25d46822c8b7637f.png",
+    "static/media/manstyle.png": "/moj-portfolio/static/media/manstyle.f12082c525f46ff1ce31.png",
+    "static/media/traditional-barber-s-shop-pole-8uhwftncpmvaxz1c.jpg": "/moj-portfolio/static/media/traditional-barber-s-shop-pole-8uhwftncpmvaxz1c.9243a0cfcff5596a4884.jpg",
+    "static/media/logo.png": "/moj-portfolio/static/media/logo.605665e457c3640163e9.png",
+    "index.html": "/moj-portfolio/index.html",
+    "main.57f0ce15.css.map": "/moj-portfolio/static/css/main.57f0ce15.css.map",
+    "main.8e4b922d.js.map": "/moj-portfolio/static/js/main.8e4b922d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57f0ce15.css",
+    "static/js/main.8e4b922d.js"
+  ]
+}
