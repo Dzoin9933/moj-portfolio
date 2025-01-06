@@ -7,7 +7,7 @@ import App from './App';  // Glavna aplikacija
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter> {/* Wrap entire app with BrowserRouter */}
+     <BrowserRouter basename="/moj-portfolio">
       <App />
     </BrowserRouter>
   </React.StrictMode>
