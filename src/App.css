@@ -1,0 +1,238 @@
+/* Global styles */
+html, body {
+  margin: 0; /* Uklonite marginu sa strane */
+  padding: 0; /* Uklonite padding sa strane */
+  height: 100%; /* Postavite visinu na 100% */
+  width: 100%; /* Postavite širinu na 100% */
+  overflow-x: hidden; /* Sprečava horizontalno skrolovanje */
+}
+
+/* Home styles */
+body {
+  background-image: url('images/vintage-frame-salon-tools-jobs-career-concept.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Home sekcija */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Naslov */
+.home h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 2s ease-out;
+}
+
+/* Animacija za naslov */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Opis */
+.home p {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Stilizovanje liste */
+.home ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* List item */
+.home li {
+  margin: 25px 0;
+}
+
+/* Linkovi */
+.home a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.home a:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: scale(1.1);
+}
+
+/* Efekat na hover na listama */
+.home li:hover a {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.1);
+}
+
+/* Frizer styles */
+.male-hairdresser, .female-hairdresser {
+  padding: 20px;
+}
+
+/* Slike iznad naslova */
+.hairdresser-image {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Povećajte visinu slike */
+  object-fit: cover;
+  opacity: 0.8;
+  margin-bottom: 20px;
+}
+
+/* Slika za ženski frizer */
+.female-hairdresser .hairdresser-image.female {
+  background-image: url('images/womenstyle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Slika za muški frizer */
+.male-hairdresser .hairdresser-image.male {
+  background-image: url('images/manstyle.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Stilizacija za usluge */
+.services {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 100%;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Svaka usluga */
+.service {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover efekt za usluge */
+.service:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-10px);
+}
+
+/* Formular za rezervaciju */
+.booking-form {
+  margin-top: 50px;
+  text-align: left;
+  animation: fadeIn 2s ease-out;
+}
+
+/* Dugme za rezervaciju */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Promene boje za ženski frizer */
+.female-hairdresser {
+  background-color: #f8e0f3; /* Sveta roze pozadina */
+  color: #c07bb1; /* Tamno roze tekst */
+}
+
+/* Za muški frizer */
+.male-hairdresser {
+  background-color: #d0e0e3; /* Sveta plava pozadina */
+  color: #405b73; /* Tamno plavi tekst */
+}
+
+/* Stilizacija za kalendar */
+.calendar-container {
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-male .react-calendar {
+  background-color: #e0f7fa; /* Plavi ton za muški frizer */
+  border-radius: 10px;
+}
+
+.calendar-female .react-calendar {
+  background-color: #fce4ec; /* Rozi ton za ženski frizer */
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  border-radius: 8px;
+}
+
+.react-calendar__tile--active {
+  background-color: #03a9f4; /* Plavi ili rozi aktivni datum */
+  color: white;
+}
+
+.react-calendar__tile--hasActive {
+  background-color: #b3e5fc;
+}
