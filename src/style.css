@@ -28,15 +28,15 @@ body {
 
 .logo-header {
   background-image: url('images/logo.png'); /* Putanja do slike */
-  background-size: 17%; /* Slika će biti prilagođena veličini */
   background-repeat: no-repeat; /* Slika se neće ponavljati */
   background-position: center; /* Slika će biti centrirana */
-  height: 300px; /* Visina header-a */
+  height: 400px; /* Visina header-a smanjena za sve ekrane */
+  background-size: contain; /* Zadržavamo proporcije slike, ali je smanjujemo tako da se cela slika vidi */
   text-align: center; /* Centriranje sadržaja unutar header-a */
   color: #fff; /* Boja teksta unutar header-a */
-  padding: 20px 0; /* Padding oko sadržaja */
-  margin-top: px;
-  margin-bottom: 35px;
+  padding: 10px 0; /* Smanjen padding */
+  margin-top: 0;
+  margin-bottom: 25px; /* Manji razmak */
 }
 
 /* Home section */
@@ -48,35 +48,30 @@ body {
   padding: 30px;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 12px; /* Manji border-radius */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
-
-
-
 
 /* Styling for paragraphs inside the home class */
 .home p {
-  font-size: 18px;
+  font-size: 16px; /* Manji font za paragrafe */
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px; /* Manji razmak između paragrafa */
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
 
-
-
 /* Styling for paragraphs inside the salon-description class */
 .salon-description p {
-  font-size: 16px;
+  font-size: 14px; /* Manji font za salon description */
   color: #555;
-  line-height: 1.7;
+  line-height: 1.6;
   margin-bottom: 15px;
   font-family: 'Arial', sans-serif;
   text-align: justify;
   background-color: #f9f9f9;
-  padding: 15px;
+  padding: 12px;
   border-left: 5px solid #ff6347; /* Adding a border to match the theme */
   transition: all 0.3s ease-in-out;
   border-radius: 5px;
@@ -89,32 +84,14 @@ body {
   transform: translateY(-3px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Header */
 .home h1 {
-  font-size: 4rem;
+  font-size: 3rem; /* Smanjen font za naslov */
   font-weight: 900;
-  margin-bottom: 30px;
-  letter-spacing: 3px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8);
   animation: fadeIn 2s ease-out;
 }
 
@@ -132,12 +109,12 @@ body {
 
 /* Description */
 .home p {
-  font-size: 40px;
-  margin-bottom: 40px;
+  font-size: 24px; /* Smanjen font za opis */
+  margin-bottom: 20px;
   font-weight: bold;
   letter-spacing: 1px;
   color: #ffffff;
-  line-height: 1.6;
+  line-height: 1.5;
   animation: fadeIn 2s ease-out;
 }
 
@@ -153,48 +130,52 @@ body {
 
 /* List item */
 .home li {
-  margin: 25px 0;
+  margin: 15px 0; /* Smanjeni razmaci između stavki */
 }
 
 /* Links */
 .home a {
-  font-size: 1.8rem;
+  font-size: 1.5rem; /* Manji font za linkove */
   color: #fff;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px 40px;
+  padding: 11px 20px;
   border-radius: 12px;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  font-weight: 700;
+  font-weight: 600px;
   letter-spacing: 1px;
 }
 
 .home a:hover {
   background-color: rgba(0, 0, 0, 0.9);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 /* Hover effect for list items */
 .home li:hover a {
   background-color: rgba(0, 0, 0, 0.8);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-
-
-/*responsive*/
+/* responsive */
 
 /* Responsiveness for smaller screens */
 
 /* Tablet size and below */
 @media (max-width: 768px) {
+  .logo-header {
+    height: 180px; /* Manja visina loga na tabletima */
+    background-size: contain; /* Održavamo proporcije, logo se smanjuje da bi stao */
+    margin-top: 15px;
+  }
+
   .home h1 {
-    font-size: 3rem;
+    font-size: 2rem; /* Smanjen naslov na tabletima */
   }
 
   .home p {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 16px; /* Manji font za tablet */
+    margin-bottom: 15px;
   }
 
   .home ul {
@@ -202,70 +183,88 @@ body {
   }
 
   .home li {
-    margin: 15px 0;
+    margin: 10px 0;
   }
 
   .home a {
-    font-size: 1.5rem;
-    padding: 15px 30px;
+    font-size: 1.4rem; /* Manji font za dugmadi */
+    padding: 10px 20px; /* Manji padding */
   }
 
   .salon-description h2 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Manji naslov u salon opisu */
   }
 
   .salon-description p {
-    font-size: 14px;
+    font-size: 13px; /* Manji font za opis */
   }
 
-  .logo-header {
-    height: 200px;
+  .home {
+    padding: 15px; /* Manji padding za tablet */
   }
 }
 
 /* Mobile size and below */
 @media (max-width: 480px) {
+  /* Logo */
+  .logo-header {
+    height: 160px; /* Manja visina loga na mobilnim uređajima */
+    background-size: contain; /* Logo se prilagođava, ali se cela slika vidi */
+    margin-top: 170px;
+  }
+.home{
+  margin-bottom: 40px;
+  
+}
+  /* Naslov */
   .home h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Manji naslov za mobilne */
+    margin-bottom: 15px;
   }
 
+  /* Paragrafi */
   .home p {
-    font-size: 18px;
+    font-size: 14px; /* Manji font za paragrafe */
+    margin-bottom: 10px;
   }
 
+  /* Lista */
   .home ul {
     padding-left: 0;
   }
 
   .home li {
-    margin: 10px 0;
+    margin: 6px 0; /* Manji razmak između listića */
   }
 
+  /* Linkovi */
   .home a {
-    font-size: 1.2rem;
-    padding: 10px 20px;
+    font-size: 1.2rem; /* Manji font za linkove */
+    padding: 4px 10px; /* Manji padding */
+    border-radius: 8px;
   }
 
+  .home a:hover {
+    transform: scale(1.03); /* Manje uvećanje pri hover-u */
+  }
+
+  /* Salon description */
   .salon-description h2 {
-    font-size: 1.8rem;
+    font-size: 1.3rem; /* Manji naslov */
+     
   }
 
   .salon-description p {
-    font-size: 12px;
+    font-size: 12px; /* Manji font za tekst u opisu */
+   
   }
 
-  .logo-header {
-    height: 50px;
-    background-size: 30%;
-    margin-top: 20px;
+  /* Home sekcija */
+  .home {
+    padding: 30px; /* Manji padding za mobile */
+    margin-top: 5px; /* Manji razmak */
   }
 }
- 
-/*---------------*/
-
-
-
-
 
 
 
@@ -444,7 +443,7 @@ margin-top: 50px;
   position: relative;
   z-index: 10;
   margin-bottom: 30px;
-  margin-left: 150px;
+  margin-left: 140px;
 }
 
 .react-calendar {
@@ -537,72 +536,78 @@ margin-top: 50px;
 
 /* Sekcija za Muški Frizer */
 .male-hairdresser {
-  display: flex; /* Dodajemo Flexbox za centriranje sadržaja */
-  justify-content: center; /* Centriramo sadržaj horizontalno */
-  align-items: center; /* Centriramo sadržaj vertikalno */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Pozicioniranje sadržaja na vrh */
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7); /* Tamna pozadina za kontrast */
+  background-color: rgba(0, 0, 0, 0.7);
   background-image: url(images/manstyle.png);
   background-position: center;
-  background-size:  contain; /* Slika pokriva sekciju bez ponavljanja */
-  background-repeat: no-repeat; /* Sprečavanje ponavljanja slike */
+  background-size: contain;
+  background-repeat: no-repeat;
   color: #d4d4d4;
-  padding: 35px;
+  padding: 10px; /* Manji padding */
   border-radius: 15px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  width: 90%; /* Širina se prilagođava */
-  margin: 40px auto; /* Centriramo box horizontalno */
-  height: auto; /* Visina se prilagođava sadržaju */
-  min-height: 500px; /* Minimalna visina sekcije */
+  width: 90%;
+  margin: 20px auto; /* Manja margina */
+  height: auto;
+  min-height: 350px; /* Smanjena minimalna visina */
+  position: relative;
+  overflow: hidden; /* Sprečava izlazak sadržaja iz ekrana */
 }
 
 /* Stilizacija za h2 naslove */
 .naslovi-h h2 {
   text-align: center;
-  font-size: 60px; /* Manji font na mobilnim uređajima */
+  font-size: 30px; /* Manji font */
   font-weight: bolder;
-  color: #fff; /* Originalna boja */
-  margin-bottom: 20px;
+  color: #fff;
+  margin-bottom: 10px; /* Manji razmak */
   transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+  top: 0; /* Vratiti top na 0 da se ne pomera previše */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Hover efekat za h2 */
 .naslovi-h h2:hover {
-  color: #e74c3c; /* Crvena boja pri hoveru */
-  transform: scale(1.05); /* Blagi rast naslova */
+  color: #e74c3c;
+  transform: scale(1.05) translateX(-50%);
 }
 
 /* Stilizacija za h3 naslove */
 .naslovi-h h3 {
   text-align: center;
-  font-size: 32px; /* Manji font na mobilnim uređajima */
+  font-size: 20px; /* Manji font */
   font-weight: bold;
-  color: #34495e; /* Originalna boja */
-  margin-top: 20px;
-  margin-bottom: 20px;
+  color: #34495e;
+  margin-top: 10px; /* Manji razmak */
+  margin-bottom: 10px;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover efekat za h3 */
 .naslovi-h h3:hover {
-  color: #e74c3c; /* Crvena boja pri hoveru */
-  transform: scale(1.05); /* Blagi rast naslova */
+  color: #e74c3c;
+  transform: scale(1.05);
 }
 
 .male-hairdresser .services {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 20px; /* Manji razmak od naslova */
   justify-content: center;
 }
 
 .male-hairdresser .service {
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  margin: 15px;
+  margin: 8px; /* Manji razmak između kartica */
   border-radius: 10px;
-  width: 240px;
-  padding: 20px;
+  width: 45%; /* Kartice manja širina */
+  padding: 15px; /* Manji padding */
   text-align: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -610,12 +615,12 @@ margin-top: 50px;
 /* Hover efekat za servisne kartice */
 .male-hairdresser .service:hover {
   background-color: #34495e;
-  transform: translateY(-10px);
+  transform: translateY(-5px);
 }
 
 .male-hairdresser button {
   margin-top: 15px;
-  padding: 15px 30px;
+  padding: 12px 25px; /* Manji padding */
   background-color: #2c3e50;
   border-radius: 8px;
   color: white;
@@ -633,46 +638,48 @@ margin-top: 50px;
 /* Mobilni uređaji */
 @media (max-width: 600px) {
   .male-hairdresser {
-    padding: 10px;
-    min-height: 400px;
+    padding: 10px; /* Manji padding */
+    min-height: 300px; /* Još manja visina sekcije */
   }
 
   .naslovi-h h2 {
-    font-size: 25px; /* Manji font na mobilnim uređajima */
+    font-size: 20px; /* Manji font za mobilne uređaje */
+    margin-bottom: 5px;
   }
 
   .naslovi-h h3 {
-    font-size: 17px; /* Manji font na mobilnim uređajima */
+    font-size: 16px; /* Manji font za mobilne uređaje */
   }
 
   .male-hairdresser .services {
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
   }
 
   .male-hairdresser .service {
     width: 90%; /* Kartice uzimaju 90% širine na mobilnim uređajima */
-    margin: 10px;
+    margin: 5px; /* Manji razmak */
   }
 }
 
 /* Tablet uređaji */
 @media (max-width: 768px) {
   .male-hairdresser {
-    padding: 19px;
+    padding: 15px;
+    min-height: 350px;
   }
 
   .naslovi-h h2 {
-    font-size: 40px; /* Srednji font za tablet uređaje */
+    font-size: 28px; /* Manji font za tablet uređaje */
   }
 
   .naslovi-h h3 {
-    font-size: 25px; /* Srednji font za tablet uređaje */
+    font-size: 22px; /* Manji font za tablet uređaje */
   }
 
   .male-hairdresser .service {
-    width: 50%; /* Kartice uzimaju 45% širine na tabletima */
-    margin: 15px;
+    width: 45%; /* Kartice uzimaju 45% širine na tabletima */
+    margin: 10px;
   }
 }
 
@@ -692,15 +699,15 @@ margin-top: 50px;
   }
 
   .male-hairdresser .service {
-    width: 240px; /* Fiksna širina kartica za desktop */
+    width: 240px;
     margin: 30px;
   }
 }
 
 
 
-/* Female Hairdresser section */
-.female-hairdresser {
+ /* Female Hairdresser section */
+ .female-hairdresser {
   display: flex; /* Omogućava korišćenje flexbox-a */
   justify-content: center; /* Horizontalno poravnanje */
   align-items: center; /* Vertikalno poravnanje */
@@ -708,7 +715,8 @@ margin-top: 50px;
   background: linear-gradient(to left, rgba(255, 192, 203, 0.8), #b393d3); /* Gradient background for femininity */
   background-image: url(images/womenstyle.png);
   background-position: center;
-  background-size: cover;
+  background-size: cover ;
+
   color: white;
   padding: 30px;
   border-radius: 15px;
@@ -861,12 +869,12 @@ margin-top: 50px;
   }
 
   .naslov-zenski h2 {
-    font-size: 45px; /* Manji font za vrlo male ekrane */
+    font-size: 40px; /* Manji font za vrlo male ekrane */
     margin-bottom: 5px;
   }
 
   .naslov-zenski h3 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .female-hairdresser .service {
