@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/moj-portfolio/static/css/main.f014fc04.css",
-    "main.js": "/moj-portfolio/static/js/main.0d227b04.js",
+    "main.js": "/moj-portfolio/static/js/main.19175fb5.js",
     "static/media/vintage-frame-salon-tools-jobs-career-concept.jpg": "/moj-portfolio/static/media/vintage-frame-salon-tools-jobs-career-concept.756f19e0927785deed09.jpg",
     "static/media/womenstyle.png": "/moj-portfolio/static/media/womenstyle.163b25d46822c8b7637f.png",
     "static/media/manstyle.png": "/moj-portfolio/static/media/manstyle.f12082c525f46ff1ce31.png",
@@ -9,10 +9,10 @@
     "static/media/logo.png": "/moj-portfolio/static/media/logo.605665e457c3640163e9.png",
     "index.html": "/moj-portfolio/index.html",
     "main.f014fc04.css.map": "/moj-portfolio/static/css/main.f014fc04.css.map",
-    "main.0d227b04.js.map": "/moj-portfolio/static/js/main.0d227b04.js.map"
+    "main.19175fb5.js.map": "/moj-portfolio/static/js/main.19175fb5.js.map"
   },
   "entrypoints": [
     "static/css/main.f014fc04.css",
-    "static/js/main.0d227b04.js"
+    "static/js/main.19175fb5.js"
   ]
 }
